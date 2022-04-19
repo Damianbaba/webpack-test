@@ -1,9 +1,27 @@
 import '../scss/main.scss';
+import moment from 'moment'
 
-// uncomment the lines below to enable PWA
-// import {registerSW} from './pwa.js';
-// registerSW();
+const buttonTwo = document.querySelector('.action--js')
 
-/* place your code below */
+buttonTwo.addEventListener('click', () => {
+    const heading = document.querySelector('.main-heading--js');
+    heading.innerHTML = ('Wszystko gra!');
+    heading.classList.add('klasa-z-js');
+});
 
-console.log('HELLO 🚀')
+const hamburger = document.querySelector('.hamburger--js');
+
+hamburger.addEventListener('click', () => {
+    const nav = document.querySelector('.navigation--js');
+    nav.classList.toggle('navigation--open');
+})
+
+
+
+const startOfTheDay = moment().startOf('day').fromNow();
+
+const timePlaceholder = document.querySelector('.time--js');
+timePlaceholder.innerHTML = startOfTheDay
+
+console.log(startOfTheDay);
+
