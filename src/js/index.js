@@ -21,7 +21,32 @@ hamburger.addEventListener('click', () => {
 const startOfTheDay = moment().startOf('day').fromNow();
 
 const timePlaceholder = document.querySelector('.time--js');
-timePlaceholder.innerHTML = startOfTheDay
+timePlaceholder.innerHTML = startOfTheDay;
 
 console.log(startOfTheDay);
+
+
+
+// Dodawanie cookies
+// localStorage.setItem('human', 'Damian');
+
+// console.log(localStorage.removeItem('human'));
+
+
+
+// brak widocznych danych w obiekcie , jak dostać się do obiektu?
+
+// console.log(JSON.stringify({ name: 'Tango' }));
+
+localStorage.setItem('newKey', JSON.stringify({ name: 'Tango' }));
+
+
+const myResult = localStorage.getItem('newKey');
+
+console.log(JSON.parse(myResult));
+
+
+// localStorage.setItem('newKey', { name: 'Tango' });
+
+// console.log(localSorage.getItem('newKey'));
 
