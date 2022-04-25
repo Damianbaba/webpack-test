@@ -1,4 +1,4 @@
-![cover](./github/homepage.jpg/cover.png)
+![cover](./github/homepage.jpg)
 
 # Homepage Damiana
 
