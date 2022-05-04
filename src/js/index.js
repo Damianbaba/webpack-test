@@ -2,10 +2,16 @@ import '../scss/main.scss';
 import moment from 'moment'
 
 const buttonTwo = document.querySelector('.action--js')
+const startOfTheDay = moment().format('MMMM Do YYYY, h:mm:ss a');
+
+// const timePlaceholder = document.querySelector('.time--js');
+// timePlaceholder.innerHTML = startOfTheDay;
+
+// console.log(startOfTheDay);
 
 buttonTwo.addEventListener('click', () => {
     const heading = document.querySelector('.main-heading--js');
-    heading.innerHTML = ('Wszystko gra!');
+    heading.innerHTML = (startOfTheDay);
     heading.classList.add('klasa-z-js');
 });
 
@@ -18,12 +24,9 @@ hamburger.addEventListener('click', () => {
 
 
 
-const startOfTheDay = moment().startOf('day').fromNow();
 
-const timePlaceholder = document.querySelector('.time--js');
-timePlaceholder.innerHTML = startOfTheDay;
 
-console.log(startOfTheDay);
+
 
 
 

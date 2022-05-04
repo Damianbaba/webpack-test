@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <!-- <link rel="stylesheet" href="./normalize.css">
-  <link rel="stylesheet" href="./css/style.css"> -->
+  <title>Homepage</title>
+  <!-- <link rel="stylesheet" href="./normalize.css">  npm -->
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
@@ -14,31 +14,31 @@
   <header class="header">
     <button class="hamburger hamburger--js" aria-label="Otwórz menu"></button>
     <nav class="navigation navigation--js">
-      <a class="navigation__link navigation__link--homepage" href="./index.html">Strona Główna</a>
-      <a class="navigation__link" href="./nauka-html.html">Nauka HTML</a>
-      <a class="navigation__link" href="./nauka-css.html">O Nas</a>
-      <a class="navigation__link" href="./nauka-html.html">Nauka HTML</a>
+      <a class="navigation__link navigation__link--homepage" href="./index.html">Home</a>
+      <a class="navigation__link" href="./nauka-html.html">HTML</a>
+      <a class="navigation__link" href="./nauka-css.html">JavaScript</a>
+      <a class="navigation__link" href="./nauka-html.html">about</a>
     </nav>
   </header>
 
   <main class="main-homepage">
     <header class="main__header" id="top">
-      <h1 class="main__heading main-heading--js" id="name">Damian Mroczek</h1>
-      <p>Od początku dnia minęło: <span class="time--js"></span></p>
-      <button class="action--js">Zmien nagłówek</button>
+      <h1 class="main__heading main-heading--js" id="name">Hello World</h1>
+      <!-- <p>Od początku dnia minęło: <span class="time--js"></span></p> -->
+      <button class="top-button action--js">click me</button>
       <p class="extra-text extra-text__description--JS"></p>
     </header>
 
     <section class="about">
-      <h2 class="about__heading"> Kim jestem?</h2>
-      <img class="about__picture" src="../assets/img/damian2 - Copy.png" alt="poza Damiana">
-      <p class="about__description"> Hej! Na co dzień uczę się <em>tajnej sztuki frontendu</em> i szukam pracy
-        jako Web Developer. Poza tym
-        bardzo
-        lubie
-        nowe technologie i dobre jedzenie.Biorę udział w szkoleniu <a class="about__link"
-          href="https://cotenfrontend.pl/">WTF</a> Witam
-        na mojej stronie! <a class="about__link" href="#notatki">Przejdz do notatek</a> </p>
+      <div class="about__description">
+        <h2 class="about__heading">Welcome to my portfolio.</h2>
+        <img class="about__image" src="../assets/img/damian2 - Copy.png" alt="poza Damiana">
+        <p class="about__description--text">My Name is Damian,<em>born on the 26th of
+            September</em> 1982.I live In
+          Poland <a class="about__link" href="https://simple.wikipedia.org/wiki/Poland">Click me</a> I am a creative
+          front-end
+          developer. <a class="about__link" href="#notatki">Przejdz do notatek</a></p>
+      </div>
     </section>
 
     <section class="notes" id="notatki">
@@ -135,8 +135,9 @@
     </section>
   </main>
   <footer class="footer">
-    Strona domowa Damiana Mroczka, wszystkie treści są efektem tworzenia podczas szkolenia WTF: Co ten frontend. <a
-      class="footer__link" href="#top">Wróć do góry</a>
+    <p class="footer__paragraph">
+      Strona domowa Damiana Mroczka, wszystkie treści są efektem tworzenia podczas szkolenia WTF: Co ten frontend.<a
+        class="footer__link" href="#top">Wróć do góry</a></p>
   </footer>
   <!-- <script src="./script.js"></script> -->
 </body>
