@@ -31,19 +31,16 @@ body {
 
 .header {
     position: fixed;
+    top: 0;
     background-color: #a8dadc;
     min-height: 60px;
-    top: 0;
     width: 100%;
+    
 }
-
-// .header-link {
-//     background-color: rgb(157, 145, 145);
-// }
 
 .navigation {
     display: none;
-    padding: 16px;
+    padding: 16px; 
 }
 
 .navigation--open {
@@ -65,7 +62,7 @@ body {
  .navigation__link:hover{
         color: #0093E9;
         transition: .3s;
-    }
+}
 
 .navigation__link--homepage {
    
@@ -83,14 +80,19 @@ body {
     width: 32px;
     border: 1px solid white;
     opacity: .4;
-    /* border: none; */
-    /* background: none; */
+  
 }
 
 .hamburger:hover{
     opacity: 1;
     transition: 2s;
 }
+
+// .header-link {
+//     background-color: rgb(157, 145, 145);
+// }
+
+
 
 // .hamburger::after{
 //    content: "";
@@ -108,7 +110,7 @@ section {
    margin: 60px auto;
 
 
-.main__header{
+ .main__header{
    
 .main__heading {
    margin-top: 100px;
